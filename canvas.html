@@ -1,0 +1,23 @@
+	<div id="contWrap">
+	    <p id="canvasPosi"></p>
+	</div>
+	<script>
+		var script = document.createElement("script");
+		script.setAttribute("src", "loadcont.js");
+		$("#contWrap").prepend(script);
+		$(window).load(function() {
+			$('p#canvasPosi').css('display', 'block');
+		});
+	</script>
+	<style type="text/css">
+	#barWrap {
+		width: 600px;
+		height: 160px;
+		top:0;left:0;
+		position: absolute;
+		display: block;
+		z-index: 10;
+		font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+		text-align: left;
+	}
+	</style>
